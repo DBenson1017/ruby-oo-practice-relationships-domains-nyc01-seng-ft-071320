@@ -31,7 +31,7 @@ Create the necessary methods to connect these classes.
 
 - #ingredients
   - should return an array of ingredients for the dessert
-- #bakery
+- #bakery - DONE 
   - should return the bakery object for the dessert
 - #calories
   - should return a number totaling all the calories for all the ingredients included in that dessert
