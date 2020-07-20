@@ -17,20 +17,17 @@ class Bakery
 
     # should return an array of ingredients for the bakery's desserts
     def ingredients 
-       BakeryIngredient.all.select do |ingredient|
-         if ingredient.bakery == self 
+       Ingredient.all.select do |i|
+         if i.bakery == self 
          end 
         end 
     end 
 
     # DONE - should return an array of desserts the bakery makes
     def desserts 
-        bakery_desserts = []
+      
         Dessert.all.select do |dessert_instance|
-            if dessert_instance.belongs_to == self.name 
-                bakery_desserts << dessert_instance
-            end 
-            bakery_desserts
+            dessert_instance.belongs_to == self 
         end 
     end 
 
